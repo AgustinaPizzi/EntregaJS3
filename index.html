@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unidades del SI de uso mas corriente y sus equivalencias</h1>
+
+        <h2>Especializado para Agrónomos</h2>
+
+        <p>
+            Para utilizar el conversor:
+        </p>
+
+        <ul>
+            <li>Selecciona el elemento de origen en el primer menú desplegable.</li>
+            <li>Selecciona a la medida que se desea convertir</li>
+            <li>Ingresa la medida que deseas convertir en el tercer cuadro de texto. Por ejemplo, si deseas convertir
+                1T, ingresa "1" en el recuadro.</li>
+        </ul>
+        <div>
+            <label for="deMedida">Medida a convertir:</label>
+            <select id="deMedida">
+                <option value="T">tera</option>
+                <option value="G">giga</option>
+                <option value="M">mega</option>
+                <option value="k">kilo</option>
+                <option value="d">deci</option>
+                <option value="c">centi</option>
+                <option value="m">mili</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="aNewmedida">A convertir:</label>
+            <select id="aNewmedida">
+                <option value="T">tera</option>
+                <option value="G">giga</option>
+                <option value="M">mega</option>
+                <option value="k">kilo</option>
+                <option value="d">deci</option>
+                <option value="c">centi</option>
+                <option value="m">mili</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" placeholder="10000">
+        </div>
+        <button id="btnConvertir">Convertir</button>
+        <div id="resultado"></div>
+
+        <button id="modoOscuroBtn">Modo Oscuro</button>
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
