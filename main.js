@@ -25,17 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       prefijo: "deci",
-      simbolo: "d",
+      simbolo: "D",
       factorMulti: 0.1,
     },
     {
       prefijo: "centi",
-      simbolo: "c",
+      simbolo: "C",
       factorMulti: 0.01,
     },
     {
       prefijo: "mili",
-      simbolo: "m",
+      simbolo: "MI",
       factorMulti: 0.001,
     },
   ];
@@ -64,36 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isNaN(cantidad) && medidaOrigen && medidaDestino) {
       const convertedAmount =
         cantidad * (medidaOrigen.factorMulti / medidaDestino.factorMulti);
-      resultadoDiv.textContent = `${cantidad.toFixed(
-        2
-      )} ${deMedida} es equivalente a ${convertedAmount.toFixed(
-        2
-      )} ${aNewmedida}`;
+      resultadoDiv.textContent = `${cantidad} ${deMedida} es equivalente a ${convertedAmount} ${aNewmedida}`;
     } else {
       resultadoDiv.textContent = "ERROR! Ingrese un valor válido.";
-    }
-    if (!isNaN(cantidad) && medidaOrigen && medidaDestino) {
-      const convertedAmount =
-        cantidad * (medidaDestino.factorMulti / medidaOrigen.factorMulti);
-
-      const conversion = {
-        deMedida: deMedida,
-        aNewmedida: aNewmedida,
-        cantidad: cantidad,
-        resultado: convertedAmount.toFixed(2),
-      };
-
-      conversionesGuardadas.push(conversion);
-      localStorage.setItem(
-        "conversiones",
-        JSON.stringify(conversionesGuardadas)
-      );
-
-      resultadoDiv.textContent = `${cantidad.toFixed(
-        2
-      )} ${deMedida} es equivalente a ${convertedAmount.toFixed(
-        2
-      )} ${aNewmedida}`;
     }
   });
 

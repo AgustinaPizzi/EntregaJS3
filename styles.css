@@ -11,7 +11,7 @@ body {
   width: 100%;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #00330f;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -24,8 +24,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  font-size: 28px;
-  transition: color 0.3s ease;
+  font-size: 25px;
 }
 
 p {
@@ -81,7 +80,7 @@ button {
 }
 
 .modo-oscuro-activado {
-  background-color: #333;
+  background-color: #3333339f;
   color: #f2f2f2;
 }
 
@@ -91,12 +90,12 @@ button {
 
 .modo-oscuro-activado h1,
 .modo-oscuro-activado h2 {
-  color: #f2f2f2;
+  color: #ffffff;
 }
 
 .modo-oscuro-activado select,
 .modo-oscuro-activado input {
-  background-color: #333;
+  background-color: #423f3f;
   color: #f2f2f2;
 }
 
