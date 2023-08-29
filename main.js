@@ -6,22 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       prefijo: "tera",
       simbolo: "T",
-      factorMulti: 1012,
+      factorMulti: 1000000000000,
     },
     {
       prefijo: "giga",
       simbolo: "G",
-      factorMulti: 109,
+      factorMulti: 1000000000,
     },
     {
       prefijo: "mega",
       simbolo: "M",
-      factorMulti: 106,
+      factorMulti: 1000000,
     },
     {
       prefijo: "kilo",
-      simbolo: "k",
-      factorMulti: 103,
+      simbolo: "K",
+      factorMulti: 1000,
     },
     {
       prefijo: "deci",
@@ -37,6 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
       prefijo: "mili",
       simbolo: "MI",
       factorMulti: 0.001,
+    },
+    {
+      prefijo: "micro",
+      simbolo: "MIC",
+      factorMulti: 0.000001,
     },
   ];
 
